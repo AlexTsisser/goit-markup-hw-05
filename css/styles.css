@@ -6,6 +6,7 @@
     --brand-color-buttonhover: #404BBF;
     --brand-color-cloud: #F4F4FD;
     --brand-color-borderbutton: #e7e9fc;
+    --time-transfor: 250ms;
 }
 
 html {
@@ -105,7 +106,7 @@ body {
 .logo:hover {
     text-decoration: underline;
     transition-property: underline;
-    transition-duration: 250ms;
+    transition-duration: var(--time-transfor);
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
 }
@@ -158,7 +159,7 @@ body {
 .link-studio:hover::after {
     background-color: var(--brand-color-iris);
     transition-property: background-color;
-    transition-duration: 250ms;
+    transition-duration: var(--time-transfor);
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -167,7 +168,7 @@ body {
 .link-studio:focus {
     color: var(--brand-color-buttonhover);
     transition-property: color;
-    transition-duration: 250ms;
+    transition-duration: var(--time-transfor);
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -192,7 +193,7 @@ body {
 .contacts-list .contacts:focus {
     color: var(--brand-color-buttonhover);
     transition-property: color;
-    transition-duration: 250ms;
+    transition-duration: var(--time-transfor);
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -269,7 +270,7 @@ body {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     transition-property: background-color, box-shadow;
-    transition-duration: 250ms;
+    transition-duration: var(--time-transfor);
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -450,7 +451,7 @@ body {
 .social-link:focus {
     background-color: var(--brand-color-buttonhover);
     transition-property: background-color;
-    transition-duration: 250ms;
+    transition-duration: var(--time-transfor);
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -502,7 +503,7 @@ body {
     border-color: var(--brand-color-buttonhover);
     color: var(--brand-color-buttonhover);
     transition-property: border-color, color;
-    transition-duration: 250ms;
+    transition-duration: var(--time-transfor);
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -568,7 +569,7 @@ body {
 .social-link-footer:focus {
     background-color: #31d0aa;
     transition-property: background-color;
-    transition-duration: 250ms;
+    transition-duration: var(--time-transfor);
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -590,7 +591,7 @@ body {
 .footer-link:focus {
     text-decoration: underline;
     transition-property: text-decoration;
-    transition-duration: 250ms;
+    transition-duration: var(--time-transfor);
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -675,10 +676,10 @@ body {
     backdrop-filter: blur(3px);
     opacity: 0.8;
     transition-property: transform;
-    transition-duration: 250ms;
+    transition-duration: var(--time-transfor);
 }
 
-.portfolio-list .box-label .overlay-lable:hover {
+.portfolio-list:hover .overlay-lable {
     transform: translateY(0);
 
 }
@@ -703,7 +704,7 @@ body {
         0px 1px 1px rgba(46, 47, 66, 0.16),
         0px 2px 1px rgba(46, 47, 66, 0.08);
     transition-property: box-shadow;
-    transition-duration: 250ms;
+    transition-duration: var(--time-transfor);
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -727,6 +728,54 @@ body {
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
     border-radius: 4px;
     transition-property: border, color, background-color, box-shadow;
-    transition-duration: 250ms;
+    transition-duration: var(--time-transfor);
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
+/* Modal section styles */
+
+
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(46, 47, 66, 0.4);
+    backdrop-filter: blur(6px);
+}
+
+.backdrop-window {
+    position: absolute;
+    width: 408px;
+    min-height: 576px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    background: #FCFCFC;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    padding: 24px;
+}
+
+.btn-close {
+    display: block;
+    margin-left: auto;
+    width: 24px;
+    height: 24px;
+    padding: 0;
+    border-radius: 50%;
+    background: #E7E9FC;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.cross-icon {}
+
+.is-hidden {
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
 }
