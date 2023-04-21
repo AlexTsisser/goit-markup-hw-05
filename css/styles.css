@@ -70,6 +70,7 @@ body {
 
 /* Header */
 .header {
+
     border-bottom: 1px solid #e7e9fc;
     box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
@@ -97,11 +98,15 @@ body {
 
 .logo-part {
     color: var(--brand-color-navyblue);
+
 }
 
 
 .logo:hover {
     text-decoration: underline;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 
 /* navigation  */
@@ -137,6 +142,8 @@ body {
 .link-studio:hover,
 .link-studio:focus {
     color: var(--brand-color-buttonhover);
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* Contacts */
@@ -159,6 +166,8 @@ body {
 .contacts-list .contacts:hover,
 .contacts-list .contacts:focus {
     color: var(--brand-color-buttonhover);
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* .nav-link .link:active, 
@@ -178,6 +187,7 @@ body {
 .section-hero {
     background: var(--brand-color-navyblue);
     max-width: 1440px;
+
     margin-left: auto;
     margin-right: auto;
     padding: 188px 0;
@@ -232,6 +242,8 @@ body {
     background: var(--brand-color-buttonhover);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* section-1 */
@@ -410,7 +422,8 @@ body {
 .social-link:hover,
 .social-link:focus {
     background-color: var(--brand-color-buttonhover);
-
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-icon {
@@ -460,6 +473,8 @@ body {
 .link-clients:focus {
     border-color: var(--brand-color-buttonhover);
     color: var(--brand-color-buttonhover);
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .clients-icon {
@@ -523,6 +538,8 @@ body {
 .social-link-footer:hover,
 .social-link-footer:focus {
     background-color: #31d0aa;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-link {
@@ -542,6 +559,8 @@ body {
 .footer-link:hover,
 .footer-link:focus {
     text-decoration: underline;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .logo-footer {
@@ -614,6 +633,8 @@ body {
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
         0px 1px 1px rgba(46, 47, 66, 0.16),
         0px 2px 1px rgba(46, 47, 66, 0.08);
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .box-app {
@@ -635,4 +656,6 @@ body {
     background-color: var(--brand-color-buttonhover);
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
     border-radius: 4px;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
