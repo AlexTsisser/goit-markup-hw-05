@@ -152,6 +152,8 @@ body {
     border-radius: 2px;
     top: 69px;
     left: 0;
+
+    transition-duration: var(--time-transfor);
 }
 
 .link-studio.current::after,
@@ -161,6 +163,11 @@ body {
     transition-property: background-color;
     transition-duration: var(--time-transfor);
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+}
+
+.link-studio.current {
+    color: var(--brand-color-iris)
 }
 
 
@@ -260,6 +267,7 @@ body {
     letter-spacing: 0.04em;
 
     color: var(--brand-color-white);
+    transition-duration: var(--time-transfor);
 
 }
 
@@ -267,9 +275,8 @@ body {
 .title-button:focus {
 
     background-color: var(--brand-color-buttonhover);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
-    transition-property: background-color, box-shadow;
+    transition-property: background-color;
     transition-duration: var(--time-transfor);
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -445,6 +452,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    transition-duration: var(--time-transfor);
 }
 
 .social-link:hover,
@@ -496,6 +504,7 @@ body {
     align-items: center;
     justify-content: center;
     color: #8e8f99;
+    transition-duration: var(--time-transfor);
 }
 
 .link-clients:hover,
@@ -563,6 +572,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    transition-duration: var(--time-transfor);
 }
 
 .social-link-footer:hover,
@@ -584,6 +594,7 @@ body {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--brand-color-iris);
+    transition-duration: var(--time-transfor);
 
 }
 
@@ -642,6 +653,7 @@ body {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.04em;
+    transition-duration: var(--time-transfor);
 }
 
 .img-top {
@@ -674,12 +686,12 @@ body {
 
     background: var(--brand-color-iris);
     backdrop-filter: blur(3px);
-    opacity: 0.8;
+    opacity: 1;
     transition-property: transform;
     transition-duration: var(--time-transfor);
 }
 
-.portfolio-list:hover .overlay-lable {
+.portfolio-img-link:hover .overlay-lable {
     transform: translateY(0);
 
 }
@@ -695,6 +707,7 @@ body {
 .portfolio-list {
     width: calc((100% - 48px) / 3);
     border: 0.5px solid var(--brand-color-cloud);
+    transition-duration: var(--time-transfor);
 }
 
 
@@ -731,6 +744,8 @@ body {
     transition-duration: var(--time-transfor);
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+
 
 
 /* Modal section styles */
@@ -770,6 +785,7 @@ body {
     border-radius: 50%;
     background: #E7E9FC;
     border: 1px solid rgba(0, 0, 0, 0.1);
+    cursor: pointer;
 }
 
 .cross-icon {}
